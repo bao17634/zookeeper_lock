@@ -1,0 +1,96 @@
+2019-11-01 09:59:25.572 [main] INFO  c.byr.learning.ZookeeperApplication
+                -Starting ZookeeperApplication on LAPTOP-U6D9PCNJ with PID 25520 (C:\Users\yanrong\project\javaProject\zookeeper_lock\target\classes started by yanrong in C:\Users\yanrong\project\javaProject\zookeeper_lock)
+2019-11-01 09:59:25.587 [main] INFO  c.byr.learning.ZookeeperApplication
+                -No active profile set, falling back to default profiles: default
+2019-11-01 09:59:26.427 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                -Tomcat initialized with port(s): 8089 (http)
+2019-11-01 09:59:26.443 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                -Initializing ProtocolHandler ["http-nio-8089"]
+2019-11-01 09:59:26.458 [main] INFO  o.a.catalina.core.StandardService
+                -Starting service [Tomcat]
+2019-11-01 09:59:26.458 [main] INFO  o.a.catalina.core.StandardEngine
+                -Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-01 09:59:26.558 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring embedded WebApplicationContext
+2019-11-01 09:59:26.558 [main] INFO  o.s.web.context.ContextLoader
+                -Root WebApplicationContext: initialization completed in 933 ms
+2019-11-01 09:59:26.643 [main] INFO  org.apache.zookeeper.ZooKeeper
+                -Client environment:zookeeper.version=3.5.5-390fe37ea45dee01bf87dc1c042b5e3dcce88653, built on 05/03/2019 12:07 GMT
+2019-11-01 09:59:26.643 [main] INFO  org.apache.zookeeper.ZooKeeper
+                -Client environment:host.name=LAPTOP-U6D9PCNJ.sst.skystartrade.com
+2019-11-01 09:59:26.643 [main] INFO  org.apache.zookeeper.ZooKeeper
+                -Client environment:java.version=11
+2019-11-01 09:59:26.643 [main] INFO  org.apache.zookeeper.ZooKeeper
+                -Client environment:java.vendor=Oracle Corporation
+2019-11-01 09:59:26.643 [main] INFO  org.apache.zookeeper.ZooKeeper
+                -Client environment:java.home=C:\Program Files\java\jdk-11
+2019-11-01 09:59:26.643 [main] INFO  org.apache.zookeeper.ZooKeeper
+                -Client environment:java.class.path=C:\Users\yanrong\project\javaProject\zookeeper_lock\target\classes;C:\Users\yanrong\.m2\repository\org\springframework\boot\spring-boot-starter\2.1.9.RELEASE\spring-boot-starter-2.1.9.RELEASE.jar;C:\Users\yanrong\.m2\repository\org\springframework\boot\spring-boot\2.1.9.RELEASE\spring-boot-2.1.9.RELEASE.jar;C:\Users\yanrong\.m2\repository\org\springframework\spring-context\5.1.10.RELEASE\spring-context-5.1.10.RELEASE.jar;C:\Users\yanrong\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.1.9.RELEASE\spring-boot-autoconfigure-2.1.9.RELEASE.jar;C:\Users\yanrong\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.1.9.RELEASE\spring-boot-starter-logging-2.1.9.RELEASE.jar;C:\Users\yanrong\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\yanrong\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\yanrong\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.11.2\log4j-to-slf4j-2.11.2.jar;C:\Users\yanrong\.m2\repository\org\slf4j\jul-to-slf4j\1.7.28\jul-to-slf4j-1.7.28.jar;C:\Users\yanrong\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\yanrong\.m2\repository\org\springframework\spring-core\5.1.10.RELEASE\spring-core-5.1.10.RELEASE.jar;C:\Users\yanrong\.m2\repository\org\springframework\spring-jcl\5.1.10.RELEASE\spring-jcl-5.1.10.RELEASE.jar;C:\Users\yanrong\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23.jar;C:\Users\yanrong\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.1.9.RELEASE\spring-boot-starter-web-2.1.9.RELEASE.jar;C:\Users\yanrong\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.1.9.RELEASE\spring-boot-starter-json-2.1.9.RELEASE.jar;C:\Users\yanrong\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.9.3\jackson-databind-2.9.9.3.jar;C:\Users\yanrong\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.9\jackson-core-2.9.9.jar;C:\Users\yanrong\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.9.9\jackson-datatype-jdk8-2.9.9.jar;C:\Users\yanrong\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.9\jackson-datatype-jsr310-2.9.9.jar;C:\Users\yanrong\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.9.9\jackson-module-parameter-names-2.9.9.jar;C:\Users\yanrong\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.1.9.RELEASE\spring-boot-starter-tomcat-2.1.9.RELEASE.jar;C:\Users\yanrong\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.26\tomcat-embed-core-9.0.26.jar;C:\Users\yanrong\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\9.0.26\tomcat-embed-el-9.0.26.jar;C:\Users\yanrong\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.26\tomcat-embed-websocket-9.0.26.jar;C:\Users\yanrong\.m2\repository\org\hibernate\validator\hibernate-validator\6.0.17.Final\hibernate-validator-6.0.17.Final.jar;C:\Users\yanrong\.m2\repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar;C:\Users\yanrong\.m2\repository\org\jboss\logging\jboss-logging\3.3.3.Final\jboss-logging-3.3.3.Final.jar;C:\Users\yanrong\.m2\repository\org\springframework\spring-web\5.1.10.RELEASE\spring-web-5.1.10.RELEASE.jar;C:\Users\yanrong\.m2\repository\org\springframework\spring-beans\5.1.10.RELEASE\spring-beans-5.1.10.RELEASE.jar;C:\Users\yanrong\.m2\repository\org\springframework\spring-webmvc\5.1.10.RELEASE\spring-webmvc-5.1.10.RELEASE.jar;C:\Users\yanrong\.m2\repository\org\springframework\spring-expression\5.1.10.RELEASE\spring-expression-5.1.10.RELEASE.jar;C:\Users\yanrong\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.1.9.RELEASE\spring-boot-starter-aop-2.1.9.RELEASE.jar;C:\Users\yanrong\.m2\repository\org\springframework\spring-aop\5.1.10.RELEASE\spring-aop-5.1.10.RELEASE.jar;C:\Users\yanrong\.m2\repository\org\aspectj\aspectjweaver\1.9.4\aspectjweaver-1.9.4.jar;C:\Users\yanrong\.m2\repository\net\bytebuddy\byte-buddy\1.9.16\byte-buddy-1.9.16.jar;C:\Users\yanrong\.m2\repository\org\apache\zookeeper\zookeeper\3.5.5\zookeeper-3.5.5.jar;C:\Users\yanrong\.m2\repository\org\apache\zookeeper\zookeeper-jute\3.5.5\zookeeper-jute-3.5.5.jar;C:\Users\yanrong\.m2\repository\org\apache\yetus\audience-annotations\0.5.0\audience-annotations-0.5.0.jar;C:\Users\yanrong\.m2\repository\io\netty\netty-all\4.1.39.Final\netty-all-4.1.39.Final.jar;C:\Users\yanrong\.m2\repository\org\apache\logging\log4j\log4j-core\2.12.1\log4j-core-2.12.1.jar;C:\Users\yanrong\.m2\repository\org\apache\logging\log4j\log4j-api\2.12.1\log4j-api-2.12.1.jar;C:\Users\yanrong\.m2\repository\org\apache\logging\log4j\log4j-web\2.12.1\log4j-web-2.12.1.jar;C:\Users\yanrong\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.12.1\log4j-slf4j-impl-2.12.1.jar;C:\Users\yanrong\.m2\repository\org\slf4j\slf4j-api\1.7.28\slf4j-api-1.7.28.jar;C:\Users\yanrong\.m2\repository\org\slf4j\slf4j-ext\1.7.28\slf4j-ext-1.7.28.jar;C:\Users\yanrong\.m2\repository\org\projectlombok\lombok\1.18.8\lombok-1.18.8.jar;C:\Users\yanrong\.m2\repository\io\swagger\swagger-annotations\1.5.20\swagger-annotations-1.5.20.jar;C:\Users\yanrong\.m2\repository\com\baomidou\mybatis-plus-extension\3.0-RC1\mybatis-plus-extension-3.0-RC1.jar;C:\Users\yanrong\.m2\repository\com\baomidou\mybatis-plus-core\3.0-RC1\mybatis-plus-core-3.0-RC1.jar;C:\Users\yanrong\.m2\repository\com\baomidou\mybatis-plus-annotation\3.0-RC1\mybatis-plus-annotation-3.0-RC1.jar;C:\Users\yanrong\.m2\repository\com\github\jsqlparser\jsqlparser\1.2\jsqlparser-1.2.jar;C:\Users\yanrong\.m2\repository\org\mybatis\mybatis-spring\1.3.2\mybatis-spring-1.3.2.jar;C:\Users\yanrong\.m2\repository\org\mybatis\mybatis\3.4.6\mybatis-3.4.6.jar;C:\Users\yanrong\.m2\repository\io\springfox\springfox-swagger2\2.9.2\springfox-swagger2-2.9.2.jar;C:\Users\yanrong\.m2\repository\io\swagger\swagger-models\1.5.20\swagger-models-1.5.20.jar;C:\Users\yanrong\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\yanrong\.m2\repository\io\springfox\springfox-spi\2.9.2\springfox-spi-2.9.2.jar;C:\Users\yanrong\.m2\repository\io\springfox\springfox-core\2.9.2\springfox-core-2.9.2.jar;C:\Users\yanrong\.m2\repository\io\springfox\springfox-schema\2.9.2\springfox-schema-2.9.2.jar;C:\Users\yanrong\.m2\repository\io\springfox\springfox-swagger-common\2.9.2\springfox-swagger-common-2.9.2.jar;C:\Users\yanrong\.m2\repository\io\springfox\springfox-spring-web\2.9.2\springfox-spring-web-2.9.2.jar;C:\Users\yanrong\.m2\repository\com\google\guava\guava\20.0\guava-20.0.jar;C:\Users\yanrong\.m2\repository\com\fasterxml\classmate\1.4.0\classmate-1.4.0.jar;C:\Users\yanrong\.m2\repository\org\springframework\plugin\spring-plugin-core\1.2.0.RELEASE\spring-plugin-core-1.2.0.RELEASE.jar;C:\Users\yanrong\.m2\repository\org\springframework\plugin\spring-plugin-metadata\1.2.0.RELEASE\spring-plugin-metadata-1.2.0.RELEASE.jar;C:\Users\yanrong\.m2\repository\org\mapstruct\mapstruct\1.2.0.Final\mapstruct-1.2.0.Final.jar;C:\Users\yanrong\.m2\repository\org\apache\curator\curator-recipes\3.2.1\curator-recipes-3.2.1.jar;C:\Users\yanrong\.m2\repository\org\apache\curator\curator-framework\3.2.1\curator-framework-3.2.1.jar;C:\Users\yanrong\.m2\repository\org\apache\curator\curator-client\3.2.1\curator-client-3.2.1.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2018.1.3\lib\idea_rt.jar
+2019-11-01 09:59:26.659 [main] INFO  org.apache.zookeeper.ZooKeeper
+                -Client environment:java.library.path=C:\Program Files\java\jdk-11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\NetSarang\Xftp 6\;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\libnvvp;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\yanrong\AppData\Local\Continuum\anaconda3;C:\Users\yanrong\AppData\Local\Continuum\anaconda3\Scripts;C:\Users\yanrong\AppData\Local\Continuum\anaconda3\Library\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib\x64;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\java\jdk-11\bin;C:\Program Files\java\jdk-11\jre\bin;C:\Users\yanrong\AppData\Local\Microsoft\WindowsApps;C:\Users\yanrong\AppData\Local\Programs\Git\cmd;.
+2019-11-01 09:59:26.659 [main] INFO  org.apache.zookeeper.ZooKeeper
+                -Client environment:java.io.tmpdir=C:\Users\yanrong\AppData\Local\Temp\
+2019-11-01 09:59:26.659 [main] INFO  org.apache.zookeeper.ZooKeeper
+                -Client environment:java.compiler=<NA>
+2019-11-01 09:59:26.659 [main] INFO  org.apache.zookeeper.ZooKeeper
+                -Client environment:os.name=Windows 10
+2019-11-01 09:59:26.659 [main] INFO  org.apache.zookeeper.ZooKeeper
+                -Client environment:os.arch=amd64
+2019-11-01 09:59:26.659 [main] INFO  org.apache.zookeeper.ZooKeeper
+                -Client environment:os.version=10.0
+2019-11-01 09:59:26.659 [main] INFO  org.apache.zookeeper.ZooKeeper
+                -Client environment:user.name=yanrong
+2019-11-01 09:59:26.659 [main] INFO  org.apache.zookeeper.ZooKeeper
+                -Client environment:user.home=C:\Users\yanrong
+2019-11-01 09:59:26.659 [main] INFO  org.apache.zookeeper.ZooKeeper
+                -Client environment:user.dir=C:\Users\yanrong\project\javaProject\zookeeper_lock
+2019-11-01 09:59:26.659 [main] INFO  org.apache.zookeeper.ZooKeeper
+                -Client environment:os.memory.free=238MB
+2019-11-01 09:59:26.659 [main] INFO  org.apache.zookeeper.ZooKeeper
+                -Client environment:os.memory.max=4066MB
+2019-11-01 09:59:26.659 [main] INFO  org.apache.zookeeper.ZooKeeper
+                -Client environment:os.memory.total=256MB
+2019-11-01 09:59:26.659 [main] INFO  org.apache.zookeeper.ZooKeeper
+                -Initiating client connection, connectString=10.3.0.82:2181 sessionTimeout=50000 watcher=com.byr.learning.config.ZookeeperLockConfig$1@31142d58
+2019-11-01 09:59:26.659 [main] INFO  org.apache.zookeeper.common.X509Util
+                -Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+2019-11-01 09:59:26.674 [main] INFO  o.apache.zookeeper.ClientCnxnSocket
+                -jute.maxbuffer value is 4194304 Bytes
+2019-11-01 09:59:26.674 [main] INFO  org.apache.zookeeper.ClientCnxn
+                -zookeeper.request.timeout value is 0. feature enabled=
+2019-11-01 09:59:35.817 [main-SendThread(10.3.0.82:2181)] INFO  org.apache.zookeeper.ClientCnxn
+                -Opening socket connection to server 10.3.0.82/10.3.0.82:2181. Will not attempt to authenticate using SASL (unknown error)
+2019-11-01 09:59:35.855 [main-SendThread(10.3.0.82:2181)] INFO  org.apache.zookeeper.ClientCnxn
+                -Socket connection established, initiating session, client: /192.168.3.49:59044, server: 10.3.0.82/10.3.0.82:2181
+2019-11-01 09:59:35.902 [main-SendThread(10.3.0.82:2181)] INFO  org.apache.zookeeper.ClientCnxn
+                -Session establishment complete on server 10.3.0.82/10.3.0.82:2181, sessionid = 0x200003145f90054, negotiated timeout = 40000
+2019-11-01 09:59:36.019 [main] INFO  o.a.c.f.imps.CuratorFrameworkImpl
+                -Starting
+2019-11-01 09:59:36.019 [main] INFO  org.apache.zookeeper.ZooKeeper
+                -Initiating client connection, connectString=10.3.0.82:2181 sessionTimeout=50000 watcher=org.apache.curator.ConnectionState@26837057
+2019-11-01 09:59:36.019 [main] INFO  o.apache.zookeeper.ClientCnxnSocket
+                -jute.maxbuffer value is 4194304 Bytes
+2019-11-01 09:59:36.019 [main] INFO  org.apache.zookeeper.ClientCnxn
+                -zookeeper.request.timeout value is 0. feature enabled=
+2019-11-01 09:59:36.019 [main] INFO  o.a.c.f.imps.CuratorFrameworkImpl
+                -Default schema
+2019-11-01 09:59:36.119 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                -Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-01 09:59:36.204 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                -Starting ProtocolHandler ["http-nio-8089"]
+2019-11-01 09:59:36.219 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                -Tomcat started on port(s): 8089 (http) with context path ''
+2019-11-01 09:59:36.219 [main] INFO  c.byr.learning.ZookeeperApplication
+                -Started ZookeeperApplication in 10.948 seconds (JVM running for 11.914)
+2019-11-01 09:59:45.195 [main-SendThread(10.3.0.82:2181)] INFO  org.apache.zookeeper.ClientCnxn
+                -Opening socket connection to server 10.3.0.82/10.3.0.82:2181. Will not attempt to authenticate using SASL (unknown error)
+2019-11-01 09:59:45.218 [main-SendThread(10.3.0.82:2181)] INFO  org.apache.zookeeper.ClientCnxn
+                -Socket connection established, initiating session, client: /192.168.3.49:59054, server: 10.3.0.82/10.3.0.82:2181
+2019-11-01 09:59:45.264 [main-SendThread(10.3.0.82:2181)] INFO  org.apache.zookeeper.ClientCnxn
+                -Session establishment complete on server 10.3.0.82/10.3.0.82:2181, sessionid = 0x200003145f90055, negotiated timeout = 40000
+2019-11-01 09:59:45.264 [main-EventThread] INFO  o.a.c.f.state.ConnectionStateManager
+                -State change: CONNECTED
+2019-11-01 09:59:45.302 [main-EventThread] INFO  o.a.c.framework.imps.EnsembleTracker
+                -New config event received: [115, 101, 114, 118, 101, 114, 46, 49, 61, 49, 48, 46, 51, 46, 48, 46, 55, 57, 58, 50, 56, 56, 56, 58, 51, 56, 56, 56, 58, 112, 97, 114, 116, 105, 99, 105, 112, 97, 110, 116, 10, 115, 101, 114, 118, 101, 114, 46, 50, 61, 49, 48, 46, 51, 46, 48, 46, 56, 50, 58, 50, 56, 56, 56, 58, 51, 56, 56, 56, 58, 112, 97, 114, 116, 105, 99, 105, 112, 97, 110, 116, 10, 115, 101, 114, 118, 101, 114, 46, 51, 61, 49, 48, 46, 51, 46, 48, 46, 56, 51, 58, 50, 56, 56, 56, 58, 51, 56, 56, 56, 58, 112, 97, 114, 116, 105, 99, 105, 112, 97, 110, 116, 10, 118, 101, 114, 115, 105, 111, 110, 61, 48]
+2019-11-01 09:59:46.120 [main-EventThread] INFO  o.a.c.framework.imps.EnsembleTracker
+                -New config event received: [115, 101, 114, 118, 101, 114, 46, 49, 61, 49, 48, 46, 51, 46, 48, 46, 55, 57, 58, 50, 56, 56, 56, 58, 51, 56, 56, 56, 58, 112, 97, 114, 116, 105, 99, 105, 112, 97, 110, 116, 10, 115, 101, 114, 118, 101, 114, 46, 50, 61, 49, 48, 46, 51, 46, 48, 46, 56, 50, 58, 50, 56, 56, 56, 58, 51, 56, 56, 56, 58, 112, 97, 114, 116, 105, 99, 105, 112, 97, 110, 116, 10, 115, 101, 114, 118, 101, 114, 46, 51, 61, 49, 48, 46, 51, 46, 48, 46, 56, 51, 58, 50, 56, 56, 56, 58, 51, 56, 56, 56, 58, 112, 97, 114, 116, 105, 99, 105, 112, 97, 110, 116, 10, 118, 101, 114, 115, 105, 111, 110, 61, 48]

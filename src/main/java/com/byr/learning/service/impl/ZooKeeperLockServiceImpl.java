@@ -1,6 +1,5 @@
 package com.byr.learning.service.impl;
 
-import com.byr.learning.config.ConfigProperties;
 import com.byr.learning.service.ZooKeeperLockService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.zookeeper.*;
@@ -18,7 +17,11 @@ import java.util.concurrent.TimeUnit;
 @Service
 public class ZooKeeperLockServiceImpl implements ZooKeeperLockService {
     /**
-     * 当前锁
+     * 锁超时间
+     */
+    final Integer TIME_OUT = 3000;
+    /**
+     * 当前锁节点
      */
     private String currentLock;
     /**
@@ -30,8 +33,6 @@ public class ZooKeeperLockServiceImpl implements ZooKeeperLockService {
      */
     private CountDownLatch countDownLatch;
     @Autowired
-    ConfigProperties configProperties;
-    @Autowired
     ZooKeeper zooKeeper;
 
     @Override
@@ -40,7 +41,7 @@ public class ZooKeeperLockServiceImpl implements ZooKeeperLockService {
             log.info("线程{}加锁{}成功", Thread.currentThread().getName(), this.currentLock);
             return true;
         } else {
-            return waitOtherLock(rootLockNode, this.waitLock, configProperties.getSessionTimeoutMs());
+            return waitOtherLock(rootLockNode, this.waitLock, TIME_OUT);
         }
     }
 
@@ -52,18 +53,18 @@ public class ZooKeeperLockServiceImpl implements ZooKeeperLockService {
             throw new RuntimeException("lockName can't contains '_lock_' ");
         }
         try {
-            String path = rootLockNode + "/" + lockName + split;
-            Stat stat = zooKeeper.exists(path, false);
+            String nodePath = rootLockNode + "/" + lockName + split;
+            Stat stat = zooKeeper.exists(nodePath, false);
             if (null == stat) {
                 // 创建锁节点（临时有序节点）
-                String rootChildNode = zooKeeper.create(path, new byte[0],
+                String rootChildNode = zooKeeper.create(nodePath, new byte[0],
                         ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL_SEQUENTIAL);
                 this.currentLock = rootChildNode.substring(rootChildNode.lastIndexOf("/"), rootChildNode.length());
                 log.info("线程{}创建锁节点{}成功", Thread.currentThread().getName(), this.currentLock);
             } else {
                 return false;
             }
-            // 取所有子节点
+            // 获取根节点所有子节点
             List<String> nodes = zooKeeper.getChildren(rootLockNode, false);
             // 取所有竞争lockName的锁
             List<String> lockNodes = new ArrayList<String>();
@@ -74,13 +75,13 @@ public class ZooKeeperLockServiceImpl implements ZooKeeperLockService {
             }
             Collections.sort(lockNodes);
             // 取最小节点与当前锁节点比对加锁
-            String currentLockPath = lockNodes.get(0);
+            String currentLockPath = "/" + lockNodes.get(0);
             if (this.currentLock.equals(currentLockPath)) {
                 return true;
             }
             // 加锁失败，设置前一节点为等待锁节点
             String currentLockNode = this.currentLock;
-            String localNode = currentLockNode.substring(currentLockNode.lastIndexOf("/") + 1, currentLockNode.length());
+            String localNode = currentLockNode.replace("/", "");
             int preNodeIndex = Collections.binarySearch(lockNodes, localNode) - 1;
             if (preNodeIndex < 0) {
                 return false;
@@ -107,9 +108,9 @@ public class ZooKeeperLockServiceImpl implements ZooKeeperLockService {
                 islock = this.countDownLatch.await(sessionTimeout, TimeUnit.MILLISECONDS);
                 this.countDownLatch = null;
                 if (islock) {
-                    log.info("线程{}锁{}加锁成功，锁{}已经释放", Thread.currentThread().getName(), this.currentLock, waitLock);
+                    log.info("线程:{}锁:{}加锁成功，锁:{}已经释放", Thread.currentThread().getName(), this.currentLock, waitLock);
                 } else {
-                    log.info("线程{}锁{}加锁失败", Thread.currentThread().getName(), this.currentLock);
+                    log.info("线程:{}锁:{}加锁失败", Thread.currentThread().getName(), this.currentLock);
                 }
             } else {
                 islock = true;
@@ -121,12 +122,13 @@ public class ZooKeeperLockServiceImpl implements ZooKeeperLockService {
     }
 
     @Override
-    public void unlock() throws InterruptedException {
+    public void unLock(String rootLockNode) throws InterruptedException {
         try {
-            Stat stat = zooKeeper.exists(this.currentLock, false);
+            String nodePath = rootLockNode + this.currentLock;
+            Stat stat = zooKeeper.exists(nodePath, false);
             if (null != stat) {
-                log.info("线程{}释放锁{}", Thread.currentThread().getName(), this.currentLock);
-                zooKeeper.delete(this.currentLock, -1);
+                log.info("线程:{}释放锁:{}", Thread.currentThread().getName(), this.currentLock);
+                zooKeeper.delete(nodePath, -1);
                 this.currentLock = null;
             }
         } catch (Exception e) {

@@ -51,7 +51,7 @@ public class ZookeeperController {
     public ApiResult processMutex() throws Exception {
         log.info("第{}个线程请求锁", ++count);
         try {
-            InterProcessMutex mutex = new InterProcessMutex(curatorFramework, ROOT_LOCK_NODE);
+            InterProcessMutex mutex = new InterProcessMutex(curatorFramework, ROOT_LOCK_NODE + "1");
             if (mutex.acquire(TIME_OUT, TimeUnit.SECONDS)) {
                 try {
                     log.info("获得锁线程为：{}", ++number);
@@ -66,7 +66,7 @@ public class ZookeeperController {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-        return ApiResult.failed("加锁失败");
+        throw new RuntimeException("拿到锁失败");
     }
 
     /**
@@ -78,7 +78,7 @@ public class ZookeeperController {
     public ApiResult semaphoreMutex() throws Exception {
         log.info("第{}个线程请求锁", ++count);
         try {
-            InterProcessSemaphoreMutex mutex = new InterProcessSemaphoreMutex(curatorFramework, ROOT_LOCK_NODE);
+            InterProcessSemaphoreMutex mutex = new InterProcessSemaphoreMutex(curatorFramework, ROOT_LOCK_NODE + "2");
             if (mutex.acquire(TIME_OUT, TimeUnit.SECONDS)) {
                 try {
                     log.info("获得锁线程为：{}", ++number);
@@ -93,7 +93,7 @@ public class ZookeeperController {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-        return ApiResult.failed("加锁失败");
+        throw new RuntimeException("拿到锁失败");
     }
 
     /**
@@ -105,7 +105,7 @@ public class ZookeeperController {
     public ApiResult readWriteLock() throws Exception {
         log.info("第{}个线程请求锁", ++count);
         try {
-            InterProcessReadWriteLock readWriteLock = new InterProcessReadWriteLock(curatorFramework, ROOT_LOCK_NODE);
+            InterProcessReadWriteLock readWriteLock = new InterProcessReadWriteLock(curatorFramework, ROOT_LOCK_NODE + "3");
             //读锁
             InterProcessMutex readLock = readWriteLock.readLock();
             //写锁
@@ -113,11 +113,11 @@ public class ZookeeperController {
             try {
                 //注意只有先得到写锁在得到读锁，不能反过来
                 if (!writeLock.acquire(TIME_OUT, TimeUnit.SECONDS)) {
-                    return ApiResult.failed("得到写锁失败");
+                    throw new RuntimeException("得到写锁失败");
                 }
                 log.info("已经得到写锁");
                 if (!readLock.acquire(TIME_OUT, TimeUnit.SECONDS)) {
-                    return ApiResult.failed("得到写锁失败");
+                    throw new RuntimeException("得到读锁失败");
                 }
                 log.info("已经得到读锁");
                 log.info("获得锁线程数为：{}", ++number);
@@ -142,18 +142,21 @@ public class ZookeeperController {
     @GetMapping("/zookeeper_lock")
     @ApiOperation(value = "zookeeper原生实现分布式阻塞锁", notes = "获取分布式锁，不能加锁则等待上一个锁的释放", response = ApiResult.class)
     public ApiResult getLock3() throws Exception {
+        String lockName = "test";
         try {
-            if (zooKeeperLockService.lock(ROOT_LOCK_NODE, "lock")) {
+            log.info("请求锁数：{}", ++count);
+            if (zooKeeperLockService.lock(ROOT_LOCK_NODE, lockName)) {
                 try {
-                    Thread.sleep(5000);
+                    log.info("获得锁线程数为：{}", ++number);
                     return ApiResult.ok("加锁成功");
                 } catch (Exception e) {
                     throw new RuntimeException(e);
                 } finally {
-                    zooKeeperLockService.unlock();
+                    log.info("解锁");
+                    zooKeeperLockService.unLock(ROOT_LOCK_NODE);
                 }
             }
-            return ApiResult.failed("加锁失败");
+            throw new RuntimeException("加锁失败");
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

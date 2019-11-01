@@ -5,28 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59e49cd4-7be4-45f8-8fdd-88c638f22a8b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/byr/learning/service/ZooKeeperLockService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/byr/learning/service/impl/ZooKeeperLockServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/byr/learning/common/ZookeeperMother.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/byr/learning/config/SpringConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/byr/learning/config/SwaggerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/byr/learning/config/ZkConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/byr/learning/config/CuratorConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/byr/learning/distributedlock/DistributedLock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/byr/learning/distributedlock/controller/ExclusiveLockTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/byr/learning/distributedlock/controller/ZKReadLockTest1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/byr/learning/distributedlock/controller/ZKReadLockTest2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/byr/learning/distributedlock/controller/ZKWriteLockTest1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/byr/learning/distributedlock/controller/ZKWriteLockTest2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/byr/learning/distributedlock/exclusive/ExclusiveLock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/byr/learning/distributedlock/readwrite/ReadWriteLock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/byr/learning/distributedlock/readwrite/impl/ZKReadWriteLock1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/byr/learning/distributedlock/readwrite/impl/ZKReadWriteLock2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/byr/learning/distributedlock/unit/LockStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/byr/learning/zookeeper/api/DistributedLockTestApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/byr/learning/controller/ZookeeperController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/byr/learning/zookeeper/api/SwaggerApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/byr/learning/zookeeper/lock/DistributedLockByZookeeper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/byr/learning/controller/ZookeeperController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/byr/learning/controller/ZookeeperController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/byr/learning/service/ZooKeeperLockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/byr/learning/service/ZooKeeperLockService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/byr/learning/service/impl/ZooKeeperLockServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/byr/learning/service/impl/ZooKeeperLockServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ZookeeperLockConfig.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ZookeeperLockConfig.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/byr/learning/config/ZookeeperLockConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-220">
-              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+            <state relative-caret-position="-196">
+              <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,11 +33,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZookeeperApplication.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ZookeeperApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/byr/learning/ZookeeperApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
               <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+              <folding>
+                <element signature="e#451#452#0" expanded="true" />
+                <element signature="e#522#523#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="124" column="36" selection-start-line="124" selection-start-column="36" selection-end-line="124" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZookeeperController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/byr/learning/controller/ZookeeperController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="155" column="43" selection-start-line="155" selection-start-column="43" selection-end-line="155" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZooKeeperLockService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/byr/learning/service/ZooKeeperLockService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -62,11 +79,11 @@
       <file leaf-file-name="ZooKeeperLockServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/byr/learning/service/impl/ZooKeeperLockServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="60" column="32" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="32" />
+            <state relative-caret-position="1385">
+              <caret line="129" column="92" selection-start-line="129" selection-start-column="92" selection-end-line="129" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2334#2342#0" expanded="true" />
+                <element signature="e#2361#2369#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,7 +123,6 @@
       <find>curator-framework</find>
       <find>cur</find>
       <find>zook</find>
-      <find>exists</find>
       <find>emptyList()</find>
       <find>Iterator</find>
       <find>listIterator</find>
@@ -116,6 +132,10 @@
       <find>Iterator()</find>
       <find>waitLock</find>
       <find>CuratorConfiguration</find>
+      <find>surefire</find>
+      <find>exists</find>
+      <find>web</find>
+      <find>MILLISECONDS</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -146,19 +166,20 @@
         <option value="$PROJECT_DIR$/src/main/java/com/byr/learning/curatorlockservice/CuratorLockService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/byr/learning/common/ZookeeperLockConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/byr/learning/service/ZooKeeperLockServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/byr/learning/service/ZooKeeperLockService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/byr/learning/service/CuratorLockService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/byr/learning/service/impl/CuratorLockServiceImpl.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/byr/learning/controller/DistributeLock.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/byr/learning/controller/ZookeeperClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/byr/learning/controller/Demo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/byr/learning/service/impl/ZooKeeperLockServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/byr/learning/config/LockWatcher.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/byr/learning/config/ZookeeperLockConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/byr/learning/config/CuratorConfiguration.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/byr/learning/service/ZooKeeperLockService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/byr/learning/config/ZookeeperLockConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/byr/learning/controller/ZookeeperController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/byr/learning/service/impl/ZooKeeperLockServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -173,11 +194,11 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="research-zoo-keeper" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="zookeeper_lock" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="research-zoo-keeper" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="zookeeper_lock" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
@@ -187,9 +208,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-8" />
-    <option name="width" value="977" />
+    <option name="width" value="1112" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -199,6 +220,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -273,13 +297,45 @@
               <item name="learning" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="zookeeper_lock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zookeeper_lock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="byr" type="462c0819:PsiDirectoryNode" />
+              <item name="learning" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zookeeper_lock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zookeeper_lock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="byr" type="462c0819:PsiDirectoryNode" />
+              <item name="learning" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zookeeper_lock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zookeeper_lock" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zookeeper_lock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zookeeper_lock" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,7 +345,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../redis-distributed-lock" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -309,7 +365,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Demo">
+  <component name="RunManager" selected="Spring Boot.ZookeeperApplication">
     <configuration name="CuratorDistributeLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.byr.learning.demo.CuratorDistributeLock" />
       <module name="zookeeper_lock" />
@@ -362,6 +418,10 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="zookeeper_lock-1.0.0-SNAPSHOT.jar" type="JarApplication" factoryName="JAR Application">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/zookeeper_lock-1.0.0-SNAPSHOT.jar" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+    </configuration>
     <configuration name="ZookeeperApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="zookeeper_lock" />
       <extension name="coverage">
@@ -395,6 +455,7 @@
       <listeners />
     </configuration>
     <list>
+      <item itemvalue="JAR Application.zookeeper_lock-1.0.0-SNAPSHOT.jar" />
       <item itemvalue="Spring Boot.ZookeeperApplication" />
       <item itemvalue="Application.CuratorDistributeLock" />
       <item itemvalue="Application.DistributeLock" />
@@ -427,19 +488,20 @@
       <workItem from="1572398338469" duration="16310000" />
       <workItem from="1572421303525" duration="119000" />
       <workItem from="1572421439620" duration="12557000" />
-      <workItem from="1572483759440" duration="20978000" />
+      <workItem from="1572483759440" duration="25837000" />
+      <workItem from="1572570224782" duration="14970000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69482000" />
+    <option name="totallyTimeSpent" value="89311000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-6" y="0" width="889" height="830" extended-state="1" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.3297587" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.5379061" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -447,18 +509,18 @@
       <window_info id="Structure" order="1" sideWeight="0.51914245" side_tool="true" weight="0.31434315" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.33238232" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3195435" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.26248217" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.24393724" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3968254" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32952926" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.20827389" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48085758" visible="true" weight="0.22386059" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.50927246" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48085758" visible="true" weight="0.33333334" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -484,37 +546,29 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="59" />
+      <option name="time" value="86" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>mutex.acquire(TIME_OUT, TimeUnit.SECONDS)</expression-string>
+        <expression-string />
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>zooKeeper.exists(path, false)</expression-string>
+        <expression-string />
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>mutex.acquire(TIME_OUT, TimeUnit.SECONDS</expression-string>
+        <expression-string />
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/byr/learning/demo/CuratorDistributeLock.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/curator/curator-recipes/4.2.0/curator-recipes-4.2.0.jar!/org/apache/curator/framework/recipes/locks/InterProcessMutex.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/curator/curator-client/4.2.0/curator-client-4.2.0.jar!/org/apache/curator/retry/ExponentialBackoffRetry.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -627,13 +681,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/byr/learning/service/impl/CuratorLockServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/byr/learning/service/ZooKeeperLockService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/java/jdk-11/lib/src.zip!/java.base/sun/nio/ch/SocketChannelImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
@@ -645,13 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
           <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="36" column="46" lean-forward="true" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -673,10 +713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-17">
           <caret line="903" column="57" selection-start-line="903" selection-start-column="26" selection-end-line="903" selection-end-column="57" />
-          <folding>
-            <element signature="e#14231#14232#0" expanded="true" />
-            <element signature="e#14269#14270#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -712,22 +748,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-17">
           <caret line="1311" column="39" selection-start-line="1311" selection-start-column="39" selection-end-line="1311" selection-end-column="39" />
-          <folding>
-            <element signature="e#7333#7334#0" expanded="true" />
-            <element signature="e#7401#7402#0" expanded="true" />
-            <element signature="e#47134#47135#0" expanded="true" />
-            <element signature="e#47179#47180#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/byr/learning/controller/Demo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/byr/learning/controller/Demo.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.5.5/zookeeper-3.5.5-sources.jar!/org/apache/zookeeper/ZooKeeper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="977">
@@ -735,27 +759,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/byr/learning/controller/ZookeeperClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/byr/learning/controller/DistributeLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="68" column="49" selection-start-line="68" selection-start-column="49" selection-end-line="68" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1599#1607#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/byr/learning/controller/ZookeeperClient.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/byr/learning/controller/DistributeLock.java" />
     <entry file="jar://C:/Program Files/java/jdk-11/lib/src.zip!/java.base/java/util/Collections.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
@@ -763,60 +768,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/byr/learning/service/impl/ZooKeeperLockServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="60" column="32" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2334#2342#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/byr/learning/config/LockWatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/java/jdk-11/lib/src.zip!/java.base/java/util/concurrent/CountDownLatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="156" column="13" selection-start-line="156" selection-start-column="13" selection-end-line="156" selection-end-column="13" />
-          <folding>
-            <element signature="e#11112#11113#0" expanded="true" />
-            <element signature="e#11149#11150#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/byr/learning/config/CuratorConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/byr/learning/config/ZookeeperLockConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-220">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/byr/learning/config/LockWatcher.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/curator/curator-recipes/3.2.1/curator-recipes-3.2.1.jar!/org/apache/curator/framework/recipes/locks/InterProcessMutex.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
@@ -835,20 +787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="171" column="33" selection-start-line="171" selection-start-column="33" selection-end-line="171" selection-end-column="33" />
-          <folding>
-            <element signature="e#6166#6167#0" expanded="true" />
-            <element signature="e#6198#6199#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/byr/learning/controller/ZookeeperController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -856,8 +794,168 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" lean-forward="true" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/java/jdk-11/lib/src.zip!/java.base/java/util/concurrent/TimeUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="86" column="16" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/java/jdk-11/lib/src.zip!/java.base/java/util/concurrent/CountDownLatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="236" column="24" lean-forward="true" selection-start-line="236" selection-start-column="24" selection-end-line="236" selection-end-column="24" />
+          <folding>
+            <element signature="e#11112#11113#0" expanded="true" />
+            <element signature="e#11149#11150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="124" column="36" selection-start-line="124" selection-start-column="36" selection-end-line="124" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/byr/learning/config/CuratorConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/byr/learning/controller/ZookeeperController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="155" column="43" selection-start-line="155" selection-start-column="43" selection-end-line="155" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/byr/learning/service/ZooKeeperLockService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/byr/learning/service/impl/ZooKeeperLockServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1385">
+          <caret line="129" column="92" selection-start-line="129" selection-start-column="92" selection-end-line="129" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2361#2369#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/byr/learning/config/ZookeeperLockConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-196">
+          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>zookeeper_lock</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

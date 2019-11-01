@@ -21,5 +21,5 @@ public interface ZooKeeperLockService {
      * 解锁
      * @return
      */
-    void unlock() throws InterruptedException;
+    void unLock(String rootLockNode) throws InterruptedException;
 }
